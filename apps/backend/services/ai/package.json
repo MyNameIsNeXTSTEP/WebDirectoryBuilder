@@ -1,0 +1,18 @@
+{
+  "name": "ai-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gadzhiev Islam (islamgadzhiev20@gmail.com)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@packages/db": "workspace:*"
+  },
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}

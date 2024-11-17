@@ -1,0 +1,23 @@
+{
+  "name": "web-directory-builder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MyNameIsNeXTSTEP/WebDirectoryBuilder.git",
+  "author": "MyNameIsNeXTSTEP <madmath@bk.ru>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/backend/packages/*",
+    "apps/backend/services/*",
+    "apps/frontend"
+  ],
+  "scripts": {
+    "start:ai": "yarn workspace ai-service start",
+    "start:gateway": "yarn workspace api-gateway start",
+    "start:creation": "yarn workspace directory-creation-service start",
+    "start:publisher": "yarn workspace publisher-service start",
+    "start:user": "yarn workspace user-service start",
+    "start:frontend": "yarn workspace frontend dev",
+    "start:all": "npm-run-all --parallel start:ai start:gateway start:creation start:publisher start:user start:frontend"
+  }
+}

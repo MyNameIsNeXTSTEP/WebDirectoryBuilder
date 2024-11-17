@@ -1,0 +1,13 @@
+{
+  "name": "@packages/db",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gadzhiev Islam (islamgadzhiev20@gmail.com)",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "pg": "^8.13.1",
+    "mongodb": "^6.10.0",
+    "redis": "^4.7.0"
+  }
+}
